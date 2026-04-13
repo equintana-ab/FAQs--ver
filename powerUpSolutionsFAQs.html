@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Up Solutions FAQs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <!-- FAQs -->
+
+    <section id="faq-section">
+      <div class="faq-section_header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are quick answers to questions shoppers ask the most.</p>
+      </div>
+      <div class="faq-container">
+        <!--FAQ 1-->
+        <div class="faq-item">
+          <input type="checkbox" id="faq1" />
+          <label class="faq-question" for="faq1">
+            <span>What’s the right gadget to power up my gadgets/ appliances? </span>
+            <span class="icon"></span>
+          </label>
+          <div class="faq-answer">
+            <table>
+              <thead>
+                <tr>
+                  <th>Device / Use Case</th>
+                  <th>Recommended Backup Gadget</th>
+                  <th>Ideal Capacity</th>
+                  <th>Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Smartphone</td>
+                  <td>Pocket Power Bank</td>
+                  <td>5,000–10,000mAh</td>
+                  <td>Daily emergency top-up</td>
+                </tr>
+                <tr>
+                  <td>2–3 phones / whole day travel</td>
+                  <td>High-capacity Power Bank</td>
+                  <td>10,000–20,000mAh</td>
+                  <td>Commute, flights, long days</td>
+                </tr>
+                <tr>
+                  <td>Tablet / iPad / Nintendo Switch</td>
+                  <td>Power Delivery Fast-Charge Power Bank</td>
+                  <td>20,000mAh, 30W+</td>
+                  <td>Entertainment + work</td>
+                </tr>
+                <tr>
+                  <td>USB-C Laptop / MacBook Air</td>
+                  <td>Laptop Power Bank</td>
+                  <td>20,000–27,000mAh, 65W+</td>
+                  <td>Remote work, coffee shops</td>
+                </tr>
+                <tr>
+                  <td>Wi-Fi Router + Modem</td>
+                  <td>Mini UPS / DC Backup</td>
+                  <td>10,000–50,000mAh or 100Wh</td>
+                  <td>Brownout internet backup</td>
+                </tr>
+                <tr>
+                  <td>Electric Fan</td>
+                  <td>Portable Power Station</td>
+                  <td>300–500Wh</td>
+                  <td>4–8 hr outages</td>
+                </tr>
+                <tr>
+                  <td>Laptop + Wi-Fi + lights</td>
+                  <td>Mid Portable Power Station</td>
+                  <td>500–700Wh</td>
+                  <td>Work-from-home blackouts</td>
+                </tr>
+                <tr>
+                  <td>TV + fan + router</td>
+                  <td>Large Power Station</td>
+                  <td>700–1000Wh</td>
+                  <td>Family brownout kit</td>
+                </tr>
+                <tr>
+                  <td>Mini Fridge / CPAP</td>
+                  <td>Power Station with AC Output</td>
+                  <td>500–1000Wh</td>
+                  <td>Overnight use</td>
+                </tr>
+                <tr>
+                  <td>Rice cooker / microwave / heavy appliances</td>
+                  <td>High-output Power Station / Generator</td>
+                  <td>1000Wh+ / 1000W inverter</td>
+                  <td>Home emergency back-up</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!--FAQ 2-->
+        <div class="faq-item">
+          <input type="checkbox" id="faq2" />
+          <label class="faq-question" for="faq2">
+            <span>What is PD charging?</span>
+            <span class="icon"></span>
+          </label>
+          <div class="faq-answer">
+            <p>
+              PD (Power Delivery) is a fast-charging technology developed by the USB Implementers Forum. It is a
+              universal standard that works across many devices—including smartphones, tablets, and laptops—and can
+              deliver higher power using USB-C.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      #faq-section {
+        align-items: center;
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 10px;
+      }
+
+      #faq-section :is(h2, p, label) {
+        margin: unset;
+      }
+
+      #faq-section .faq-answer a {
+        font-size: 14px !important;
+        color: #337ab7;
+      }
+
+      #faq-section ol {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .faq-section_header {
+        display: grid;
+        gap: clamp(8px, 2vw, 16px);
+        text-align: center;
+        color: var(--Paragraph-Text, #5a5a59);
+        margin-bottom: 32px;
+      }
+
+      .faq-section_header h2 {
+        color: var(--Abenson-Blue-Abenson-Blue, #1e22aa);
+        font-size: clamp(24px, 2.6vw, 28px);
+        margin: unset;
+      }
+
+      .faq-section_header p {
+        font-size: 16px;
+        margin: unset;
+      }
+
+      .faq-container {
+        width: 100%;
+      }
+
+      .faq-item {
+        margin-bottom: 16px;
+        border-radius: 24px;
+        border: 1px solid var(--Grey-2, #dcdcdc);
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+        position: relative;
+      }
+
+      /* Hide checkbox */
+      .faq-item input {
+        display: none;
+      }
+
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        color: var(--PrimaryTextColor-PrimaryText90, #4c525c);
+        padding: 22px 28px;
+        font-size: clamp(16px, 1.6vw, 18px) !important;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+      }
+
+      .faq-question .icon {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+      }
+
+      .faq-question .icon:before,
+      .faq-question .icon:after {
+        content: "";
+        position: absolute;
+        width: clamp(12px, 2vw, 16px);
+        height: 2px;
+        background: var(--PrimaryColor-Blue70, #185baa);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s;
+      }
+
+      /* Vertical line (for "+") */
+      .faq-question .icon:after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+
+      /* Answer content */
+      .faq-answer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 28px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--SecondaryGray-SecondaryText-SecondaryGray80, #767676);
+        transition:
+          max-height 0.35s ease,
+          padding 0.35s ease;
+      }
+
+      .faq-answer h3 {
+        font-size: clamp(16px, 1.6vw, 18px) !important;
+        margin: unset;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 600;
+      }
+
+      .faq-answer strong {
+        font-weight: 600;
+      }
+
+      .faq-answer :is(td, th, tr) {
+        border: 1px solid #ccc;
+        padding: 8px;
+      }
+
+      .faq-answer table {
+        border-spacing: 0;
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .faq-answer p:last-child {
+        margin-bottom: 22px;
+      }
+
+      /* When OPEN */
+      .faq-item input:checked ~ .faq-answer {
+        max-height: fit-content;
+        padding: 0 28px 22px 28px;
+      }
+
+      /* Turn "+" into "-" */
+      .faq-item input:checked ~ .faq-question .icon:after {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      .faq-answer ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: disc;
+        margin: 0 0 0 28px;
+      }
+
+      .faq-answer ul li:marker {
+        font-size: 12px;
+      }
+    </style>
+
+    <!-- JS: Generate FAQ JSON-LD  -->
+    <script type="text/simi-script">
+      (function initFAQ() {
+          const faq = document.querySelector("#faq-section");
+          if (!faq) return;
+
+          function generateFAQSchema() {
+
+              const faqItems = faq.querySelectorAll(".faq-item");
+              if (!faqItems.length) return;
+
+              const faqData = {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": []
+              };
+
+              faqItems.forEach(item => {
+
+                  const questionEl = item.querySelector(".faq-question span");
+                  const question = questionEl ? questionEl.textContent.trim() : "";
+
+                  let answerEl = item.querySelector(".faq-answer p");
+
+                  if (!answerEl) {
+                      // fallback if no <p>
+                      answerEl = item.querySelector(".faq-answer");
+                  }
+
+                  const answer = answerEl ? answerEl.textContent.trim() : "";
+
+                  if (question && answer) {
+                      faqData.mainEntity.push({
+                          "@type": "Question",
+                          "name": question,
+                          "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": answer
+                          }
+                      });
+                  }
+
+              });
+
+              if (faqData.mainEntity.length) {
+                  const script = document.createElement("script");
+                  script.type = "application/ld+json";
+                  script.text = JSON.stringify(faqData);
+
+                  document.head.appendChild(script);
+
+                  console.log("FAQ structured data added");
+              }
+
+          }
+
+          // Run immediately
+          generateFAQSchema();
+
+          // Re-run for Magento dynamic loads
+          document.addEventListener("contentUpdated", generateFAQSchema);
+          document.addEventListener("page:loaded", generateFAQSchema);
+          document.addEventListener("product-list-rendered", generateFAQSchema);
+
+      })();
+    </script>
+  </body>
+</html>
